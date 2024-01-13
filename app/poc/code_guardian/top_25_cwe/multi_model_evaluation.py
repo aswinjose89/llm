@@ -44,6 +44,119 @@ class CveEvaluator:
         )
         tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-chat-hf")
         return model, tokenizer
+    
+    def get_cybersecurity_gpt_schema(self):
+        json_schema= {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "programming_language": {
+                    "type": "string",
+                    "description": "The programming language of the vulnerable source code."
+                },
+                "compiler_name": {
+                    "type": "string",
+                    "description": "The name of the compiler used to compile the patched code."
+                },
+                "fixed_source_code": {
+                    "type": "string"
+                },
+                "software_packages": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "A list of all the imported libraries or packages used in the source code."
+                },
+                "supporting_operating_system": {
+                    "type": "string",
+                    "description": "The supporting operating system(s) for the code, or 'cross-platform' if applicable."
+                },
+                "executive_summary": {
+                    "type": "string",
+                    "description": "A detailed description of the vulnerabilities in the code, their fixes, and any relevant analysis including discovery, exploitation, and social engineering aspects."
+                },
+                "vulnerability_details": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                        "vulnerability_id": {
+                            "type": "string",
+                            "description": "The ID of the vulnerability from the NVD."
+                        },
+                        "description": {
+                            "type": "string",
+                            "description": "A description of the identified vulnerability."
+                        },
+                        "severity": {
+                            "type": "string",
+                            "description": "The severity of the vulnerability."
+                        },
+                        "impact": {
+                            "type": "string",
+                            "description": "The impact of the vulnerability."
+                        },
+                        "recommendation": {
+                            "type": "string",
+                            "description": "Recommendations to avoid exploitation of the vulnerability."
+                        },
+                        "cvss_score": {
+                            "type": "number",
+                            "description": "The CVSS score of the vulnerability."
+                        }
+                        },
+                        "required": ["vulnerability_id", "description", "severity", "impact", "recommendation", "cvss_score"]
+                    },
+                    "description": "Details of each identified vulnerability."
+                },
+                "vulnerability_type": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "A list of types of vulnerabilities identified in the code."
+                },
+                "cwe": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "A list of all applicable CWE identifiers for the vulnerabilities found in the provided source code. A brief description of each identified vulnerability corresponding to its CWE identifier."
+                },
+                "conclusion": {
+                    "type": "string",
+                    "description": "A concluding statement summarizing the critical vulnerabilities identified and the need for immediate action."
+                },
+                "user_role": {
+                    "type": "string",
+                    "description": "Role of the user making the request."
+                },
+                "max_tokens": {
+                    "type": "integer",
+                    "description": "The maximum number of tokens to generate in the completion."
+                },
+                "temperature": {
+                    "type": "number",
+                    "description": "Controls randomness in generation. Higher is more random."
+                }
+            },
+            "required": [
+                "programming_language",
+                "compiler_name",
+                "fixed_source_code",
+                "software_packages",
+                "supporting_operating_system",
+                "executive_summary",
+                "vulnerability_details",
+                "vulnerability_type",
+                "cwe",
+                "nvd",                
+                "conclusion",
+                "user_role", "max_tokens", "temperature"
+            ]
+            }
+        return json_schema
 
 
     def general_template(self, input):
@@ -56,7 +169,7 @@ class CveEvaluator:
         {input}
         `
 
-        Reply the answer in JSON form with associated properties are programming_language, compiler_name, fixed_source_code, 
+        Please provide the response in JSON format and need details about programming_language, compiler_name, fixed_source_code, 
         executive_summary, vulnerability_details, vulnerability_type, cwe, cvss_score, nvd
         """
         return instruction
@@ -86,8 +199,10 @@ class CveEvaluator:
               messages=[{"role": "system", "content": 'you are a cybersecurity analyst to find and fix vulnerability in computer code'},
                         {"role": "user", "content": instruction}              
               ],
-              max_tokens=4000)
-        content= response.choices[0].message.content
+              functions=[{"name": "set_vulnerability_fix", "parameters": self.get_cybersecurity_gpt_schema()}],
+              function_call={"name": "set_vulnerability_fix"},
+              max_tokens=4096)
+        content= response.choices[0].message.function_call.arguments
         return content
 
     def gpt3_5_response(self, instruction):
@@ -120,9 +235,17 @@ class CveEvaluator:
         with open(output_file_path, 'w') as output_file:
             output_file.write(content)
         
-        code_fix_output_file_path = os.path.join(output_dir, file_name)
-        # with open(code_fix_output_file_path, 'w') as output_file:
-        #     output_file.write(code_fix)
+        if "gpt4" in output_dir:
+            code_fix_output_dir= os.path.join(output_dir, "code")
+            if not os.path.exists(code_fix_output_dir):
+                os.makedirs(code_fix_output_dir)
+            content= content.strip()            
+            content= json.loads(content)
+            
+        if content:
+            code_fix_output_file_path = os.path.join(output_dir, "code", file_name)
+            with open(code_fix_output_file_path, 'w') as output_file:
+                output_file.write(content["fixed_source_code"])
     
     def save_instruction(self, instruction, instruction_file_path):
         with open(instruction_file_path, 'w') as inst_output_file:
