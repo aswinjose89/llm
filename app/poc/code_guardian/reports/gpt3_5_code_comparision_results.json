@@ -1,0 +1,12 @@
+[
+    {
+        "patched_code": {
+            "resolves_vulnerability": true,
+            "new_security_issues": false,
+            "maintains_functionality": true,
+            "maintains_performance": true,
+            "adherence_to_best_practices": true
+        },
+        "id": 1
+    }
+]
