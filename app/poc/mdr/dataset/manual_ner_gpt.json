@@ -1,0 +1,924 @@
+[
+    {
+        "sentences": [
+            {
+                "sentence": "qApR9a8 ISEACMNT \"C\r\n\n2677TB HADQETERS 00  XP (PROV)\r\n\n      AP0 512, .S.",
+                "entities": []
+            },
+            {
+                "sentence": "AMY\r\n\n\r\n\n22 March 1944.",
+                "entities": []
+            },
+            {
+                "sentence": "S53JECT: Report of Trip to 0?",
+                "entities": []
+            },
+            {
+                "sentence": "1\r\n\n\r\n\nTO     : Commanding Officer, Detachment    , 2677th H% Co Exp (Prov),\r\n\n         APO 512, US.",
+                "entities": [
+                    {
+                        "entity": "2677th H% Co Exp (Prov)",
+                        "relation": "RECIPIENT"
+                    },
+                    {
+                        "entity": "APO 512, US",
+                        "relation": "LOCATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "Army.",
+                "entities": []
+            },
+            {
+                "sentence": "1.",
+                "entities": []
+            },
+            {
+                "sentence": "MISSION:",
+                "entities": []
+            },
+            {
+                "sentence": "        a.",
+                "entities": []
+            },
+            {
+                "sentence": "To transport to OP1 -egin    ai S.l personal -necessary.",
+                "entities": [
+                    {
+                        "entity": "OP1",
+                        "relation": "DESTINATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "in conjunction with the forthcoming 'ecat* operation",
+                "entities": []
+            },
+            {
+                "sentence": "        b.",
+                "entities": []
+            },
+            {
+                "sentence": "To supply and relieve the Military garrison on OP-1.",
+                "entities": [
+                    {
+                        "entity": "OP-1",
+                        "relation": "DESTINATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "c. To bring supplies to the civilians of the Island..",
+                "entities": []
+            },
+            {
+                "sentence": "2,  PPRATION:",
+                "entities": []
+            },
+            {
+                "sentence": "         a.",
+                "entities": []
+            },
+            {
+                "sentence": "1st Lt. William L. Sawyer, Sig C, (Communications Branch, 2677th\r\n\n     Co Zxp (Prov)) made preparations for radio and beam antenna installations\r\n\n     to be made on OP-1 in conjunction with the forthcoming OLocust'\r\n\n     operation,",
+                "entities": [
+                    {
+                        "entity": "1st Lt. William L. Sawyer",
+                        "relation": "PERSON"
+                    },
+                    {
+                        "entity": "2677th Co Exp (Prov)",
+                        "relation": "ORGANIZATION"
+                    },
+                    {
+                        "entity": "OP-1",
+                        "relation": "DESTINATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "        b.",
+                "entities": []
+            },
+            {
+                "sentence": "Personnel and garrison supplies were assembled in Bastia.",
+                "entities": [
+                    {
+                        "entity": "Bastia",
+                        "relation": "LOCATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "c. 2d Lt. Anthony Scariano, Allied Control Commission, arranged for\r\n\n     the civilian supplies.",
+                "entities": [
+                    {
+                        "entity": "2d Lt. Anthony Scariano",
+                        "relation": "PERSON"
+                    },
+                    {
+                        "entity": "Allied Control Commission",
+                        "relation": "ORGANIZATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "d. All requests from OP-1 were filled.",
+                "entities": [
+                    {
+                        "entity": "OP-1",
+                        "relation": "REQUESTER"
+                    }
+                ]
+            },
+            {
+                "sentence": "e. Arrangements for the trip by Army Rescue Boat 403 were made by\r\n\nCommander MaoCollum, E, ACV.",
+                "entities": [
+                    {
+                        "entity": "Army Rescue Boat 403",
+                        "relation": "VEHICLE"
+                    },
+                    {
+                        "entity": "Commander MaoCollum",
+                        "relation": "COORDINATOR"
+                    },
+                    {
+                        "entity": "E, ACV",
+                        "relation": "UNIT"
+                    }
+                ]
+            },
+            {
+                "sentence": "f. The OF was informed by radio of the trip and estimated time of\r\n\n     arrival.",
+                "entities": [
+                    {
+                        "entity": "OF",
+                        "relation": "RECIPIENT"
+                    }
+                ]
+            },
+            {
+                "sentence": "3.",
+                "entities": []
+            },
+            {
+                "sentence": "PERSON1EL:",
+                "entities": []
+            },
+            {
+                "sentence": "         a.",
+                "entities": []
+            },
+            {
+                "sentence": "OPERATIONS PARTY:",
+                "entities": []
+            },
+            {
+                "sentence": "             let Lt. Michael J. Formichelli, 0 - Commanding.",
+                "entities": [
+                    {
+                        "entity": "let Lt. Michael J. Formichelli",
+                        "relation": "PERSON"
+                    }
+                ]
+            },
+            {
+                "sentence": "Captain Joseph Bonfiglio, Inf - Observer.",
+                "entities": [
+                    {
+                        "entity": "Captain Joseph Bonfiglio",
+                        "relation": "PERSON"
+                    }
+                ]
+            },
+            {
+                "sentence": "2d.",
+                "entities": []
+            },
+            {
+                "sentence": "Lt. Anthony Scariano, AMG - Allied Control Commission.",
+                "entities": [
+                    {
+                        "entity": "Lt. Anthony Scariano",
+                        "relation": "PERSON"
+                    },
+                    {
+                        "entity": "AMG - Allied Control Commission",
+                        "relation": "ORGANIZATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "Lt. H..D. Flack, Jr.,   Commanding ARS 403.",
+                "entities": [
+                    {
+                        "entity": "Lt. H..D. Flack, Jr.",
+                        "relation": "PERSON"
+                    },
+                    {
+                        "entity": "ARS 403",
+                        "relation": "VEHICLE"
+                    }
+                ]
+            },
+            {
+                "sentence": "Crew of ASD 403.\r\n\n         b, S. 1.",
+                "entities": []
+            },
+            {
+                "sentence": "PERSONNEL:",
+                "entities": []
+            },
+            {
+                "sentence": "            Pvt. Carl A, Beva.",
+                "entities": [
+                    {
+                        "entity": "Pvt. Carl A, Beva",
+                        "relation": "PERSON"
+                    }
+                ]
+            },
+            {
+                "sentence": "Caporale Maggiore Gelindo Bortolzzi (Italian Army).",
+                "entities": [
+                    {
+                        "entity": "Caporale Maggiore Gelindo Bortolzzi",
+                        "relation": "PERSON"
+                    },
+                    {
+                        "entity": "Italian Army",
+                        "relation": "ORGANIZATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "Caporale Antonio Bozzer (Italian Army),",
+                "entities": [
+                    {
+                        "entity": "Caporale Antonio Bozzer",
+                        "relation": "PERSON"
+                    },
+                    {
+                        "entity": "Italian Army",
+                        "relation": "ORGANIZATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "c,  WEPLACMEWS JOR O.G.",
+                "entities": []
+            },
+            {
+                "sentence": "PERSONNEL:",
+                "entities": []
+            },
+            {
+                "sentence": "             'pl. Carl LoDolce.",
+                "entities": [
+                    {
+                        "entity": "Carl LoDolce",
+                        "relation": "PERSON"
+                    }
+                ]
+            },
+            {
+                "sentence": "Cn0i. Josenh Mariari.",
+                "entities": [
+                    {
+                        "entity": "Cn0i. Josenh Mariari",
+                        "relation": "PERSON"
+                    }
+                ]
+            },
+            {
+                "sentence": "d. PERSON1ML BETUMMD TO O.G.",
+                "entities": []
+            },
+            {
+                "sentence": "BASE:\r\n\n   Tea 5 Nick L. DMarce\r\n\n   Tea 5 Arthur DtAgostino\r\n\n                          el",
+                "entities": [
+                    {
+                        "entity": "Nick L. DMarce",
+                        "relation": "PERSON"
+                    },
+                    {
+                        "entity": "Arthur DtAgostino",
+                        "relation": "PERSON"
+                    }
+                ]
+            },
+            {
+                "sentence": "I\r\n\n  0\r\n\n4CIN\r\n\n\r\n\nr' -C\n\n(Report of Trip to OP-1, (Cont'd))",
+                "entities": []
+            },
+            {
+                "sentence": "4.",
+                "entities": []
+            },
+            {
+                "sentence": "PMRATION",
+                "entities": []
+            },
+            {
+                "sentence": "        Party left Bastia at 1915 and, arrived at OP-1 at 2200, 21 March 1944.",
+                "entities": [
+                    {
+                        "entity": "Bastia",
+                        "relation": "ORIGIN"
+                    },
+                    {
+                        "entity": "OP-1",
+                        "relation": "DESTINATION"
+                    },
+                    {
+                        "entity": "21 March 1944",
+                        "relation": "DATE"
+                    }
+                ]
+            },
+            {
+                "sentence": "The stay on shore was limited to three (3) hours, during which\r\n\ntime supplies, equipment, and personnel were unloaded, and Lt. vanzani,\r\n\nGarrison Commander, made his military report, The boat left OP-1 at 0100,\r\ncarrying  replaced military personnel and seven (7) evacuated civilians\r\n\n(3 men, 2 women, & 2 children) and arrived at Bastia at 0400, 22 March 1944.",
+                "entities": [
+                    {
+                        "entity": "Lt. vanzani",
+                        "relation": "PERSON"
+                    },
+                    {
+                        "entity": "Garrison Commander",
+                        "relation": "TITLE"
+                    },
+                    {
+                        "entity": "OP-1",
+                        "relation": "ORIGIN"
+                    },
+                    {
+                        "entity": "Bastia",
+                        "relation": "DESTINATION"
+                    },
+                    {
+                        "entity": "0100",
+                        "relation": "TIME"
+                    },
+                    {
+                        "entity": "22 March 1944",
+                        "relation": "DATE"
+                    },
+                    {
+                        "entity": "seven (7) evacuated civilians (3 men, 2 women, & 2 children)",
+                        "relation": "GROUP"
+                    }
+                ]
+            },
+            {
+                "sentence": "The War Room was informed upon arrival.",
+                "entities": []
+            },
+            {
+                "sentence": "5, REARKS:",
+                "entities": []
+            },
+            {
+                "sentence": "Lt. Manzant reported on the general situation on the island and\r\n\naided in the investigation concerning injury (accidental self-inflicted\r\n\ngunshot wound in hand) sustained by Teo, 5 Arthur DtAgostino, which\r\n\nnecessitated his replacement.",
+                "entities": [
+                    {
+                        "entity": "Lt. Manzant",
+                        "relation": "PERSON"
+                    },
+                    {
+                        "entity": "Teo, 5 Arthur DtAgostino",
+                        "relation": "PERSON"
+                    }
+                ]
+            },
+            {
+                "sentence": "Changes in plans for the defense of the\r\n\nIsland were discussed and it was agreed that an overlay of the island\r\n\ndefenses would be submitted to this headquarters on the next personal\r\n\ncontact with the OP.",
+                "entities": [
+                    {
+                        "entity": "OP",
+                        "relation": "DESTINATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "ATBBRT R. MATEA\r\n\n                                                   1st Lt., 0      .",
+                "entities": [
+                    {
+                        "entity": "ATBBRT R. MATEA",
+                        "relation": "PERSON"
+                    },
+                    {
+                        "entity": "1st Lt.",
+                        "relation": "RANK"
+                    }
+                ]
+            },
+            {
+                "sentence": "DISTRIUTION:",
+                "entities": []
+            },
+            {
+                "sentence": "1 - Hq OG, Washington.",
+                "entities": [
+                    {
+                        "entity": "Hq OG, Washington",
+                        "relation": "RECIPIENT"
+                    }
+                ]
+            },
+            {
+                "sentence": "2   Eq 26?7th Hq Co EXP (Prov).",
+                "entities": [
+                    {
+                        "entity": "26?7th Hq Co EXP (Prov)",
+                        "relation": "RECIPIENT"
+                    }
+                ]
+            },
+            {
+                "sentence": "I   Eq Area Commander",
+                "entities": []
+            },
+            {
+                "sentence": "1 \" Eq Detachment 110.",
+                "entities": []
+            },
+            {
+                "sentence": "1 - Hqnit ,\"All First Contingent, O.G.",
+                "entities": []
+            },
+            {
+                "sentence": "1 - File.",
+                "entities": []
+            },
+            {
+                "sentence": "3\n\nHADQUARTRS    ACIMENT \"G\"\r\n\n                    2677th HEADUAR      0 &    (Ov)\r\n\n                           APO 512,T Uis ARMjY\r\n\n\r\n\n                              25 Marcoh 1944\r\n\n(All times GNT)\r\n\n     Time: 0830                                    6  581\r\n\n          Weather Report:  Clear shWx poor Visibility.",
+                "entities": [
+                    {
+                        "entity": "2677th HEADUAR 0 &    (Ov)",
+                        "relation": "ORGANIZATION"
+                    },
+                    {
+                        "entity": "APO 512,T Uis ARMjY",
+                        "relation": "LOCATION"
+                    },
+                    {
+                        "entity": "25 Marcoh 1944",
+                        "relation": "DATE"
+                    },
+                    {
+                        "entity": "0830",
+                        "relation": "TIME"
+                    }
+                ]
+            },
+            {
+                "sentence": "light choppy sea;",
+                "entities": []
+            },
+            {
+                "sentence": "8          14 mph west wind; barometer 1011.7b     ee         50 Pa.",
+                "entities": []
+            },
+            {
+                "sentence": "Time: 1430.",
+                "entities": []
+            },
+            {
+                "sentence": "Nos      583.",
+                "entities": []
+            },
+            {
+                "sentence": "Wather Reports Clear Sky; poor visibility; white caps; 14 mph\r\n              northeast wind; barometer, 1017.8 mb; temperature 520 Pa.",
+                "entities": [
+                    {
+                        "entity": "Wather Reports",
+                        "relation": "REPORT"
+                    },
+                    {
+                        "entity": "1017.8 mb",
+                        "relation": "BAROMETER"
+                    }
+                ]
+            },
+            {
+                "sentence": "0840t Heavy explosions headni from Gorgona.",
+                "entities": []
+            },
+            {
+                "sentence": "26 March 1944\r\n\n     Timet 0858,                                  N os 585, 586\r\n\n          Weather Reportt  alear.rky; good visibility; smoothes  3 mph\r\n\n               wind from east; barometer 1024.5mbs temperature 47 Pa.",
+                "entities": [
+                    {
+                        "entity": "N os 585, 586",
+                        "relation": "REPORT"
+                    },
+                    {
+                        "entity": "1024.5mbs",
+                        "relation": "BAROMETER"
+                    },
+                    {
+                        "entity": "47 Pa",
+                        "relation": "TEMPERATURE"
+                    }
+                ]
+            },
+            {
+                "sentence": "2000 (25 ar); Flashing light sighted at Livorno.",
+                "entities": [
+                    {
+                        "entity": "Livorno",
+                        "relation": "LOCATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "2102 to 2124 (25 Mar): Large flame observed at 400 compass bearing .",
+                "entities": []
+            },
+            {
+                "sentence": "0350 and 0430: Red steady light at 1000 compass bearing.",
+                "entities": []
+            },
+            {
+                "sentence": "Time: 1410                                   Nos 588, 589\r\n\n          Weather Report: Clear sky; good visibility; light swell; 4 mph\r\n\n               iest wind; barometer, 1019.7 mb; temperatuzie, 52 Pa.",
+                "entities": [
+                    {
+                        "entity": "Nos 588, 589",
+                        "relation": "REPORT"
+                    },
+                    {
+                        "entity": "1019.7 mb",
+                        "relation": "BAROMETER"
+                    },
+                    {
+                        "entity": "52 Pa",
+                        "relation": "TEMPERATURE"
+                    }
+                ]
+            },
+            {
+                "sentence": "Intermittent heavy explosions was ht aid inl,6nd northeast from\r\n\n               Gorgona.",
+                "entities": []
+            },
+            {
+                "sentence": "27 March 1944\r\n\n     Time: 0835                                   Nos 593, 594\r\n\n           Weather Report: Scattered clouds; poo6 visiblity; light swell;\r\n\n                10 mph west wind; temperature, 47 Pa.",
+                "entities": [
+                    {
+                        "entity": "Nos 593, 594",
+                        "relation": "REPORT"
+                    },
+                    {
+                        "entity": "10 mph west wind",
+                        "relation": "WIND"
+                    },
+                    {
+                        "entity": "47 Pa",
+                        "relation": "TEMPERATURE"
+                    }
+                ]
+            },
+            {
+                "sentence": "0325: 'Sighted large fire at 0900 compass bearing.",
+                "entities": []
+            },
+            {
+                "sentence": "time:- 1430                                  Nos 595, 596\r\n\n           Weather Report: Scattered clouds; light choppy sea; oor visi-\r\n\n                bility; 12 mph west wind; bar 1009.0 mb; temp,35 Fa.",
+                "entities": [
+                    {
+                        "entity": "Nos 595, 596",
+                        "relation": "REPORT"
+                    },
+                    {
+                        "entity": "1009.0 mb",
+                        "relation": "BAROMETER"
+                    },
+                    {
+                        "entity": "35 Fa",
+                        "relation": "TEMPERATURE"
+                    }
+                ]
+            },
+            {
+                "sentence": "0825:  Intermittent heavy explosions heard north to northeast\r\n\n                  of Gorgona.",
+                "entities": []
+            },
+            {
+                "sentence": "%.)",
+                "entities": []
+            },
+            {
+                "sentence": "zG_M\r\n\n\n\nI- -1 -         iai -r ?",
+                "entities": []
+            },
+            {
+                "sentence": "a\n\nINTELLIGNCE RXPORT3:.",
+                "entities": []
+            },
+            {
+                "sentence": "OP-I (Cont'd)\r\n\n\r\n\nTime: 2145                                    No (0)\r\n\n    Seven unidentified small armed boats close to shore of\r\n\n         Soiro coo, Gorgona.",
+                "entities": [
+                    {
+                        "entity": "Soiro coo, Gorgona",
+                        "relation": "LOCATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "(Enemy personnel  anded from these boats, raided the island\r\n\n     destroyed th62pl8aph@e and it\" installations, Consequently\r\n\n     we were out of radio contact until 1 April 1944.)",
+                "entities": [
+                    {
+                        "entity": "1 April 1944",
+                        "relation": "DATE"
+                    }
+                ]
+            },
+            {
+                "sentence": "(2)\r\n\n\nCpR",
+                "entities": []
+            }
+        ]    
+      },
+      {
+        "sentences": [
+            {
+                "sentence": "DEPARTMENT OF THE AIR FORCE\r\n\n  OFFICE OF THE CHIEF OF STAFF\r\n\n   UNITED STATEs AIR FORCE\r\n\n     WASHINGTON, 0.",
+                "entities": [
+                    {
+                        "entity": "DEPARTMENT OF THE AIR FORCE",
+                        "relation": "ORGANIZATION"
+                    },
+                    {
+                        "entity": "OFFICE OF THE CHIEF OF STAFF",
+                        "relation": "ORGANIZATION"
+                    },
+                    {
+                        "entity": "UNITED STATES AIR FORCE",
+                        "relation": "ORGANIZATION"
+                    },
+                    {
+                        "entity": "WASHINGTON, 0.",
+                        "relation": "LOCATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "17 June ') 58",
+                "entities": [
+                    {
+                        "entity": "17 June ') 58",
+                        "relation": "DATE"
+                    }
+                ]
+            },
+            {
+                "sentence": "Dear Larrv:\r\n\n\r\n\n      Thank you for your recent letter on the NATO Light-\r\n\n Weight .Strike Fighter (LWSF).",
+                "entities": [
+                    {
+                        "entity": "Larrv",
+                        "relation": "PERSON"
+                    },
+                    {
+                        "entity": "NATO Light-Weight Strike Fighter (LWSF)",
+                        "relation": "ORGANIZATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "I also appreciate your\r\n\n sending alteam here in April to brief the Air Staff on\r\n\n the concept and development status of this aircraft.",
+                "entities": [
+                    {
+                        "entity": "April",
+                        "relation": "DATE"
+                    }
+                ]
+            },
+            {
+                "sentence": "The\r\n\n to all concerned.",
+                "entities": []
+            },
+            {
+                "sentence": "You have been advised by the Department of Defense\r\n\n that the U.",
+                "entities": [
+                    {
+                        "entity": "Department of Defense",
+                        "relation": "ORGANIZATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "S. will support the LWSF coordinated production\r\n\n program, and is prepared to place an order for a part of\r\n\n the overall requirements when France, Italy, and Germany\r\n\n have reached firm agreement and advised NATO of their\r\n\n--definite plans for procurement.",
+                "entities": [
+                    {
+                        "entity": "France",
+                        "relation": "LOCATION"
+                    },
+                    {
+                        "entity": "Italy",
+                        "relation": "LOCATION"
+                    },
+                    {
+                        "entity": "Germany",
+                        "relation": "LOCATION"
+                    },
+                    {
+                        "entity": "NATO",
+                        "relation": "ORGANIZATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "In this connection, the\r\n\n USAF will support the requirement for programming one\r\n\n squadron of LWSF for Turkey under the FY 59 MAP and the\r\n\n necessary, follow-up action is being taken.",
+                "entities": [
+                    {
+                        "entity": "USAF",
+                        "relation": "ORGANIZATION"
+                    },
+                    {
+                        "entity": "Turkey",
+                        "relation": "LOCATION"
+                    },
+                    {
+                        "entity": "FY 59 MAP",
+                        "relation": "DATE"
+                    }
+                ]
+            },
+            {
+                "sentence": "While I question the military requirement for a LWSF,\r\n\n I can appreciate the political and economic factors in-\r\n\n volved and understand the necessity for limited U. S.\r\n\n support of this weapon on this basis.",
+                "entities": [
+                    {
+                        "entity": "U. S.",
+                        "relation": "ORGANIZATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "I do, however, have\r\n\n serious reservations about the proposed employment of the\r\n\n LWSF which I understand to be for close support operations.",
+                "entities": []
+            },
+            {
+                "sentence": "As you know, this operational concept is not compatible\r\n\n with previously stated Air Force positions on roles and\r\n\n missions and optimum use of Air Power.",
+                "entities": [
+                    {
+                        "entity": "Air Force",
+                        "relation": "ORGANIZATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "I am firmly convinced that the greatest contribution\r\n\n the airplane can make to ground forces is to remove as\r\n\n quickly as possible the threat from the Air.",
+                "entities": []
+            },
+            {
+                "sentence": "Any dissi-\r\n\n pation of air power in support of secondary missions tends\r\n\n to weaken our ability to achieve this priority objective.",
+                "entities": []
+            },
+            {
+                "sentence": "As the LWSF is phased into the NATO inventory, it is\r\n\n my hope that the mission and capability might be expanded\r\n\n to insure that it will cm1matleNrF-&s-n-Iar\r\n\n\r\n\n6 ;\r\n\n\r\n\nS\r\n\n\r\n\nNLE     C 3ise No 2-6?-7/",
+                "entities": [
+                    {
+                        "entity": "NATO",
+                        "relation": "ORGANIZATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "Document No.",
+                "entities": []
+            },
+            {
+                "sentence": "REVIEWED IAW E.O.",
+                "entities": []
+            },
+            {
+                "sentence": "12958 AIMC/O",
+                "entities": []
+            },
+            {
+                "sentence": "REVIEWEDBY Lt Co\\ RA       n",
+                "entities": []
+            },
+            {
+                "sentence": "DATE   3 M-- rc  2007",
+                "entities": [
+                    {
+                        "entity": "3 M-- rc  2007",
+                        "relation": "DATE"
+                    }
+                ]
+            },
+            {
+                "sentence": "COMMENTS\r\n\n\r\n\nElectrostatic reproduction m\r\n\nby the Eisenhower Library for\r\n\npreservation purposes.",
+                "entities": [
+                    {
+                        "entity": "Eisenhower Library",
+                        "relation": "ORGANIZATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "Letter for General Norstad from General White re USAF Position\r\n\non NATO LWSF\r\n\n\r\n\noffensive force.",
+                "entities": [
+                    {
+                        "entity": "General Norstad",
+                        "relation": "PERSON"
+                    },
+                    {
+                        "entity": "General White",
+                        "relation": "PERSON"
+                    }
+                ]
+            },
+            {
+                "sentence": "I feel that this concept of employment\r\n\nwill enhance the status of the LWSF as a weapon system.",
+                "entities": []
+            },
+            {
+                "sentence": "This flexibility will certainly be of value in something\r\n\nmore than the restricted role of close support.",
+                "entities": []
+            },
+            {
+                "sentence": "With respect to a second generation aircraft, I would\r\n\nhope that European production could be phased more in line\r\n\nwith our strategic concept.",
+                "entities": [
+                    {
+                        "entity": "European",
+                        "relation": "LOCATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "This may be possible now that\r\n\nthe U. S. is more willing to release technical and opera-\r\n\ntional data to NATO agencies.",
+                "entities": [
+                    {
+                        "entity": "U. S.",
+                        "relation": "ORGANIZATION"
+                    },
+                    {
+                        "entity": "NATO",
+                        "relation": "ORGANIZATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "The USAF presently has -\r\n\ndevelopment funds on the V/STOL and the T-38 and has re-\r\n\nquested funds for development of the N-156.",
+                "entities": [
+                    {
+                        "entity": "USAF",
+                        "relation": "ORGANIZATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "As for the FIAT G-91, it is believed that only the\r\n\nminimum numbers should be purchased to satisfy the polit-\r\n\nical and economic situation and that future funds and\r\n\ndevelopment effort should be oriented toward a weapon\r\n\nsystem more in keeping with Air Force concepts.",
+                "entities": [
+                    {
+                        "entity": "FIAT G-91",
+                        "relation": "ORGANIZATION"
+                    },
+                    {
+                        "entity": "Air Force",
+                        "relation": "ORGANIZATION"
+                    }
+                ]
+            },
+            {
+                "sentence": "Sincerely yours,\r\n\n\r\n\n                               THOMAS D. WHIT\r\n\n                               Chief of Staff\r\n\n\r\n\nGeneral Lauris Norstad\r\n\nSupreme Allied Commander\r\n\nSupreme Headquarters Allied\r\n\nPowers Europe\r\n\nAPO 55\r\n\nNew York, New York\r\n\n\r\n\nElectrostatic reproduction made\r\n\nby the Eisenhower Library for\r\n\npreservation purposes.",
+                "entities": [
+                    {
+                        "entity": "THOMAS D. WHIT",
+                        "relation": "PERSON"
+                    },
+                    {
+                        "entity": "Chief of Staff",
+                        "relation": "POSITION"
+                    },
+                    {
+                        "entity": "General Lauris Norstad",
+                        "relation": "PERSON"
+                    },
+                    {
+                        "entity": "Supreme Allied Commander",
+                        "relation": "POSITION"
+                    },
+                    {
+                        "entity": "Supreme Headquarters Allied Powers Europe",
+                        "relation": "ORGANIZATION"
+                    },
+                    {
+                        "entity": "APO 55",
+                        "relation": "LOCATION"
+                    },
+                    {
+                        "entity": "New York, New York",
+                        "relation": "LOCATION"
+                    },
+                    {
+                        "entity": "Eisenhower Library",
+                        "relation": "ORGANIZATION"
+                    }
+                ]
+            }
+        ]
+        
+      }
+]
