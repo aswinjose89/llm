@@ -10,19 +10,18 @@ from pathlib import Path
 import openai
 import torch
 
-openai.api_key ="XXX"
-
-GOOGLE_API_KEY="XXX"
-openai_api_key="XXX"
-
+openai.api_key ="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"
+GOOGLE_API_KEY="AIzaSyCmev--iPOAVg3QazJEIMrn6zMyG2eFvGI"
 genai.configure(api_key=GOOGLE_API_KEY)
 
 class CveEvaluator:
 
     def __init__(self) -> None:
         self.device = "cuda" # the device to load the model onto
-        self.mistral_model, self.misral_tokenizer= self.load_mistral()
-        self.llama7b_model, self.llama7b_tokenizer= self.load_llama2_7b()
+        # self.mistral_model, self.misral_tokenizer= self.load_mistral()
+        # self.llama7b_model, self.llama7b_tokenizer= self.load_llama2_7b()
+        self.mistral_model, self.misral_tokenizer= None, None
+        self.llama7b_model, self.llama7b_tokenizer= None, None
         self.cwe_report= []
         # self.llm_gpt4= ChatOpenAI(openai_api_key=openai_api_key, model_name="gpt-4-1106-preview", max_tokens=4000)
         # self.llm_gpt4_tpl = """Question: {question}
@@ -228,6 +227,7 @@ class CveEvaluator:
     #     llm_result= llm_chain.run(instruction)
     #     return llm_result7122412
 
+    
     
     def save_output(self, content, code_fix, output_dir, file_name):
         # Create an output file with the same name in the output directory
