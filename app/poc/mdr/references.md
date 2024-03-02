@@ -100,3 +100,8 @@ mstral7b_qa => 74m32.533s, loss=>  0.043
 llama7b_qa => 67m29.629s
 llama13b_qa => 61m0.471s
 mstral7b_qa => 118m51.102s
+
+
+## Document
+
+https://docs.google.com/document/d/1CkYlt6ViPsFDNO5g0NJELUSjuhHREWPtT6f86suI_-w/edit?usp=sharing
